@@ -48,6 +48,11 @@ botaoCadastrar.addEventListener('click', (event) => {
     
     tabela.appendChild(div);
 
+    inputProduto.value = '';
+    inputCadastro.value = '';
+    inputQuantidade.value = '0';
+    inputProduto.focus();
+
     lerBotoesDeEntrada();
     lerBotoesDeSaida();
     lerBotoesDeExcluir();
@@ -85,6 +90,7 @@ function lerBotoesDeEntrada() {
             mascara.removeAttribute('id');
             divEntrada.removeAttribute('id');
             divEntrada.children[0].textContent = `Entrada de: ${event.target.dataset.entrada}`;
+            inputEntrada.focus();
             entradaSendoAtualizada = event.target.dataset.entrada;
         });
     });
@@ -122,6 +128,7 @@ function lerBotoesDeSaida() {
             mascara.removeAttribute('id');
             divSaida.removeAttribute('id');
             divSaida.children[0].textContent = `Saída de: ${event.target.dataset.saida}`;
+            inputSaida.focus();
             saidaSendoAtualizada = event.target.dataset.saida;
         });
     });

@@ -13,7 +13,7 @@
 .titulo {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .filtros {
@@ -29,6 +29,9 @@
 
 .tabela {
     margin-top: 2rem;
+    width: 100%;
+    min-width: 760px;
+    overflow-y: scroll;
 }
 
 .tabela__cabecalho {
@@ -37,7 +40,7 @@
     grid-template-areas:
     "coluna coluna coluna coluna coluna coluna"
     ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr .5fr .5fr .5fr;
 }
 
 .tabela__cabecalho-dois {
@@ -54,7 +57,7 @@
     grid-template-areas:
     "coluna coluna coluna coluna coluna coluna"
     ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr .5fr .5fr .5fr;
 }
 
 .tabela__corpo-dois {
